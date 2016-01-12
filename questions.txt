@@ -1,0 +1,18 @@
+0.  longest word in english
+1.  Getrusage returns the measures of resources of the current process and future processes.  This is the program that will tell us how fast our program is 
+    running. 
+2.  16
+3.  You want to find out how many resources are being used before the dictionary is loaded and then after the dictionary is loaded.  The pointer
+    variables before and after are used for simplicity sake, so you don't have to write out the entire struct.   
+4.  The fgetc function is essentially a getchar function for files.  This function is getting each letter from the file until the endof 
+    file has been hit and putting each letter into the array [word].  The function consists of 3 branches. 
+     1.  For words greater than 45 characters. The function consumes the rest of the word overwriting each letter in array [0]. 
+     2.  Structurally similar to 1. but for numbers.  
+     3.  When end of word (/o) has been reached for non long, non number words. It than spell checks the word.  
+5.    I think that fscanf you run into the same overflow problems that plague scanf.  The fgetc function allows you to deal with this eventuallity.   
+6.   The difference between char* and const char* is a const char * you can't dereference/change/edit the word.  You  can still change what 
+     the const char* points to.  The spell checker shouldn't modify the document it is trying to correct.  At least not in this version!.  
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
